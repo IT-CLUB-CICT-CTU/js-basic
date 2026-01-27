@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập DOM cơ bản</title>
+    <link rel="icon" type="image/png" href="ITClub.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header-logo">
+        <img src="ITClub.png" alt="Logo IT CLUB">
+        <span>IT CLUB</span>
+    </div>
+
+    <h1>Thực hành DOM</h1>
+    <p>Nhấn nút bên dưới để đổi màu nền trang.</p>
+    <button id="changeColorBtn">Đổi màu</button>
+
+    <script>
+        function getRandomColor() {
+            const letters = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Viết hoàn thiện chương trình
+        // Lấy phần tử button bằng DOM
+        
+        // Gắn sự kiện click cho button
+    </script>
+</body>
+
+</html>
