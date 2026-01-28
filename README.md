@@ -36,6 +36,14 @@ mà còn có thể **tự mình tạo ra những sản phẩm ứng dụng** nh�
 
 ---
 
+## 📘 Tài liệu tham khảo
+
+ 🔗 [Slide](https://drive.google.com/file/d/15D_czpNsfuCcqQQMY7BEraPLNe871TwJ/view?usp=sharing)
+
+ 🛠️ [Survival Kit](https://docs.google.com/document/d/18ANlqikVW1NAS4nB13Bep5l75wMOc-xU/edit?usp=sharing&ouid=111016927763921451827&rtpof=true&sd=true)
+
+---
+
 ## 🔗 ĐĂNG KÝ
 
 👉 **Link đăng ký:**  
