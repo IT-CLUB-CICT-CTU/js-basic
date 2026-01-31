@@ -1,0 +1,83 @@
+body {
+    background-color: #83a6db;
+    display: flex; /* Căn giữa máy tính ra giữa màn hình */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header-brand {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.header-brand img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.header-brand span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.calculator {
+    background: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    width: 300px;
+}
+
+#manHinh {
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box; /* Để padding không làm vỡ khung */
+    border: none;
+    border-radius: 5px;
+    background: #eee;
+}
+
+.keys {
+    display: grid; /* Sử dụng Grid Layout */
+    grid-template-columns: repeat(4, 1fr); /* Chia làm 4 cột đều nhau */
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+button {
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+/* Màu sắc riêng cho từng nhóm nút */
+.btn-op { background: #ff9f43; color: white; }
+.btn-red { background: #ff5252; color: white; }
+.btn-yellow { background: #ffb142; color: white; }
+.btn-green { background: #2ed573; color: white; }
+
+/* Class tiện ích để chỉnh độ rộng nút */
+.span-2-cols { grid-column: span 2; } /* Nút số 0 dài gấp đôi */
+.span-2-rows { grid-row: span 2; height: 100%; } /* Nút Bằng cao gấp đôi */
