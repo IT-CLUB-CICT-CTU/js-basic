@@ -1,0 +1,127 @@
+/* 1. Cài đặt chung */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    /* Nền tối để làm nổi bật nội dung chính */
+    background: linear-gradient(135deg, #4b6cb7, #182848); 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-brand {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.header-brand img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.header-brand span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* 2. Khung chính (Cái thẻ màu trắng) */
+.container {
+    background: #fff;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3); /* Đổ bóng đậm */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 3. Khu vực nhập liệu */
+.input-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1; /* Chiếm hết chỗ trống */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff5945; /* Màu cam nổi bật */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #e04835;
+}
+
+/* 4. Danh sách công việc (Phần quan trọng nhất để dễ nhìn) */
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    background: #eee; /* Màu nền xám cho từng dòng task */
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; /* Để căn chỉnh nút xóa */
+    transition: 0.2s;
+    font-size: 16px;
+    color: #333;
+}
+
+ul li:hover {
+    background: #e2e2e2;
+}
+
+/* Khi hoàn thành (Checked) */
+ul li.checked {
+    background: #9ecda9; /* Màu xanh nhạt báo hiệu thành công */
+    color: #555;
+    text-decoration: line-through;
+}
+
+/* Nút xóa (Dấu X) */
+ul li span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    width: 24px;
+    height: 24px;
+    background: #ff5945;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+ul li span:hover {
+    background: #d32f2f;
+}

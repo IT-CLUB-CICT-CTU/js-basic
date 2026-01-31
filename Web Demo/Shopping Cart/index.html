@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JavaScript</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="cart-wrapper">
+        <div class="glass-panel">
+            <noscript>⚠️JavaScript đang tắt.</noscript>
+            <h2><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</h2>
+
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?w=200&q=80" alt="Keyboard"
+                        class="product-img">
+                    <div class="product-details">
+                        <div class="product-name">Keychron K2 V2</div>
+                        <div class="product-price">1.800.000 đ</div>
+                    </div>
+                    <div class="qty-container">
+                        <input type="number" class="qty-input" value="1" min="0" data-price="1800000">
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=200&q=80" alt="Mouse"
+                        class="product-img">
+                    <div class="product-details">
+                        <div class="product-name">Logitech MX Master 3</div>
+                        <div class="product-price">2.200.000 đ</div>
+                    </div>
+                    <div class="qty-container">
+                        <input type="number" class="qty-input" value="1" min="0" data-price="2200000">
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&q=80" alt="Headphone"
+                        class="product-img">
+                    <div class="product-details">
+                        <div class="product-name">Sony WH-1000XM5</div>
+                        <div class="product-price">6.500.000 đ</div>
+                    </div>
+                    <div class="qty-container">
+                        <input type="number" class="qty-input" value="0" min="0" data-price="6500000">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-panel">
+            <h2>Hóa Đơn</h2>
+
+            <div class="summary-content">
+                <div class="summary-row"><span>Tạm tính</span><span id="subtotal">0 đ</span></div>
+                <div class="summary-row"><span>Thuế (8%)</span><span id="tax">0 đ</span></div>
+                <div class="summary-divider"></div>
+                <div class="total-row"><span>Tổng cộng</span><span id="final-price">0 đ</span></div>
+            </div>
+
+            <button class="checkout-btn" id="btn-checkout">Thanh Toán <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-box">
+            <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+            <h3>Đã Thanh Toán!</h3>
+            <p style="color:#666; margin-bottom:20px;">Đơn hàng của bạn đã được xác nhận.</p>
+            <div style="background:#f8f9fa; padding:15px; border-radius:12px; margin-bottom:20px;">
+                <small style="color:#999; display:block; margin-bottom:5px;">Tổng thanh toán</small>
+                <span id="modal-amount" style="font-size:20px; font-weight:700; color:var(--text-dark)">0 đ</span>
+            </div>
+            <button class="modal-btn-close" id="btn-close">Đóng lại</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
